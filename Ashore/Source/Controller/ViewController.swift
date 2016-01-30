@@ -11,34 +11,34 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    let storyManager = StoryManager()
     
-    var passages = [Passage]()
+    lazy var storyManager = StoryManager()
+    lazy var passages = [Passage]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCells()
-        
-        let passage1 = Passage(dictionary: ["title":"Day 1", "passage":"some story text goes here", "links":["link 1", "link 2"]])
-        let passage2 = Passage(dictionary: ["title":"Day 2", "passage":"sjkasdfoiweoic", "links":["link 1", "link 2"]])
-        print(passage1.description)
-        
-        storyManager.save([passage1, passage2])
-        
-        let allPassags = storyManager.load()
-        print(allPassags)
+        storyManager.deleteSave()
         
         if let savedStory = storyManager.load() {
             passages = savedStory
         } else {
-            // we start new story.
+            passages = [storyManager.passageWithTitle("leaving the island")] // name of first passage in story
         }
-        
+        tableView.reloadData()
     }
     
     func registerCells() {
         tableView.registerNib(UINib(nibName: "ChoiceTableViewCell", bundle: nil), forCellReuseIdentifier: "ChoiceCell")
         tableView.registerNib(UINib(nibName: "PassageTableViewCell", bundle: nil), forCellReuseIdentifier: "PassageCell")
+    }
+    
+    func tappedChoice(sender: ChoiceButton) {
+        print("choice tapped on button: ", sender.tag)
+        // TODO: Add new passage
+        let passageTitle = passages.last?.links[sender.tag]["passageTitle"]
+        passages.append(storyManager.passageWithTitle(passageTitle!))
+        tableView.reloadData()
     }
     
 }
@@ -61,22 +61,29 @@ extension ViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCellWithIdentifier("PassageCell") as! PassageTableViewCell
             
             let passage = passages[indexPath.row]
-            cell.textLabel?.text = passage.title
-            cell.detailTextLabel?.text = passage.passage
+            cell.textLabel?.text = passage.passage
             
             return cell
         }
 
         let cell = tableView.dequeueReusableCellWithIdentifier("ChoiceCell") as! ChoiceTableViewCell
-        // choice cell
+
         let lastPassage = passages.last
-        cell.textLabel?.text = lastPassage?.links.first
+        
+        if lastPassage?.links.count > 1 {
+            cell.button2.setTitle(lastPassage?.links[1]["displayText"], forState: .Normal)
+            cell.button2.hidden = false
+            cell.button2.addTarget(self, action: "tappedChoice:", forControlEvents: .TouchUpInside)
+            // set target here
+        } else {
+            cell.button2.hidden = true
+            // set target here
+        }
+        
+        cell.button1.setTitle(lastPassage?.links.first!["displayText"], forState: .Normal)
+        cell.button1.addTarget(self, action: "tappedChoice:", forControlEvents: .TouchUpInside)
 
         return cell
     }
-}
-
-extension ViewController: UITableViewDelegate {
-    
 }
 

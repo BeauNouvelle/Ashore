@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>leaving the island</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>setting out</string>
+				<key>displayText</key>
+				<string>Setting Out</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>Once again, here I am.
+
+I look back at the beach, remembering the time I spent there. The choices I made. 
+
+It makes me remember how things used to be. But, no. I can&apos;t think about that now. All I need to think about is surviving. Yeah. Not living. Living is thriving. Living is exhillerating! 
+
+I am survivng. 
+
+This little raft has served me well, but it will need to be replaced. This island had barely enough resources to even make a fire last night. I am going to just cross my fingers that I find more land soon. 
+
+One again, here I am. Setting out into the unknown. 
+
+Surviving. 
+</string>
+	</dict>
+	<key>setting out</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>keep going</string>
+				<key>displayText</key>
+				<string>Keep Going</string>
+			</dict>
+			<dict>
+				<key>passageTitle</key>
+				<string>turn back</string>
+				<key>displayText</key>
+				<string>Turn Back</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>It takes me a while, but I finally make it past the surf and into the break. The water is deep here. A beautiful shimmering grey. 
+
+I battle with myself. The island had barely any resources... But should I really gamble on whether I can make it to another island before this raft disintergrates?</string>
+	</dict>
+</dict>
+</plist>
