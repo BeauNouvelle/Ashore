@@ -12,6 +12,13 @@
 		7D6B68431C5B8BBA00EB311B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D6B68411C5B8BBA00EB311B /* LaunchScreen.storyboard */; };
 		7D6B68501C5B8D9800EB311B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B684B1C5B8D9800EB311B /* AppDelegate.swift */; };
 		7D6B68511C5B8D9800EB311B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B684D1C5B8D9800EB311B /* ViewController.swift */; };
+		7D6B68531C5C1A9700EB311B /* StoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B68521C5C1A9700EB311B /* StoryManager.swift */; };
+		7D6B68551C5C209B00EB311B /* Passage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B68541C5C209B00EB311B /* Passage.swift */; };
+		7D6B68571C5C242C00EB311B /* ChoiceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B68561C5C242C00EB311B /* ChoiceButton.swift */; };
+		7D6B685A1C5C289D00EB311B /* ChoiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B68581C5C289D00EB311B /* ChoiceTableViewCell.swift */; };
+		7D6B685B1C5C289D00EB311B /* ChoiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D6B68591C5C289D00EB311B /* ChoiceTableViewCell.xib */; };
+		7D6B685E1C5C28B200EB311B /* PassageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B685C1C5C28B200EB311B /* PassageTableViewCell.swift */; };
+		7D6B685F1C5C28B200EB311B /* PassageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D6B685D1C5C28B200EB311B /* PassageTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		7D6B68441C5B8BBA00EB311B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D6B684B1C5B8D9800EB311B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D6B684D1C5B8D9800EB311B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7D6B68521C5C1A9700EB311B /* StoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryManager.swift; sourceTree = "<group>"; };
+		7D6B68541C5C209B00EB311B /* Passage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Passage.swift; sourceTree = "<group>"; };
+		7D6B68561C5C242C00EB311B /* ChoiceButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceButton.swift; sourceTree = "<group>"; };
+		7D6B68581C5C289D00EB311B /* ChoiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceTableViewCell.swift; sourceTree = "<group>"; };
+		7D6B68591C5C289D00EB311B /* ChoiceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChoiceTableViewCell.xib; sourceTree = "<group>"; };
+		7D6B685C1C5C28B200EB311B /* PassageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassageTableViewCell.swift; sourceTree = "<group>"; };
+		7D6B685D1C5C28B200EB311B /* PassageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PassageTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +99,8 @@
 		7D6B684E1C5B8D9800EB311B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7D6B68521C5C1A9700EB311B /* StoryManager.swift */,
+				7D6B68541C5C209B00EB311B /* Passage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,6 +108,11 @@
 		7D6B684F1C5B8D9800EB311B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7D6B68561C5C242C00EB311B /* ChoiceButton.swift */,
+				7D6B68581C5C289D00EB311B /* ChoiceTableViewCell.swift */,
+				7D6B68591C5C289D00EB311B /* ChoiceTableViewCell.xib */,
+				7D6B685C1C5C28B200EB311B /* PassageTableViewCell.swift */,
+				7D6B685D1C5C28B200EB311B /* PassageTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,6 +177,8 @@
 			files = (
 				7D6B68431C5B8BBA00EB311B /* LaunchScreen.storyboard in Resources */,
 				7D6B68401C5B8BBA00EB311B /* Assets.xcassets in Resources */,
+				7D6B685B1C5C289D00EB311B /* ChoiceTableViewCell.xib in Resources */,
+				7D6B685F1C5C28B200EB311B /* PassageTableViewCell.xib in Resources */,
 				7D6B683E1C5B8BBA00EB311B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,7 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D6B685E1C5C28B200EB311B /* PassageTableViewCell.swift in Sources */,
+				7D6B68551C5C209B00EB311B /* Passage.swift in Sources */,
 				7D6B68501C5B8D9800EB311B /* AppDelegate.swift in Sources */,
+				7D6B68571C5C242C00EB311B /* ChoiceButton.swift in Sources */,
+				7D6B68531C5C1A9700EB311B /* StoryManager.swift in Sources */,
+				7D6B685A1C5C289D00EB311B /* ChoiceTableViewCell.swift in Sources */,
 				7D6B68511C5B8D9800EB311B /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
