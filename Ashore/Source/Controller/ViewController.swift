@@ -38,8 +38,7 @@ class ViewController: UIViewController {
     }
     
     func tappedChoice(sender: ChoiceButton) {
-        print("choice tapped on button: ", sender.tag)
-        // TODO: Add new passage
+        
         let passageTitle = passages.last?.links[sender.tag]["passageTitle"]
         passages.append(storyManager.passageWithTitle(passageTitle!))
         

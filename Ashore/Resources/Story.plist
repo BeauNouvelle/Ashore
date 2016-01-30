@@ -51,5 +51,49 @@ Surviving.
 
 I battle with myself. The island had barely any resources... But should I really gamble on whether I can make it to another island before this raft disintergrates?</string>
 	</dict>
+	<key>turn back</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>keep going</string>
+				<key>displayText</key>
+				<string>Keep Going</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>Turning back seems like the only chance for survival, at this point. 
+
+I put my makeshift paddle in the water to the left of the raft, preparing to turn it around. I take one more look out to the sea, and then another look at the island. 
+
+It looks about 200m away, now. And I can see how small it really is. 
+
+I would last a day, maybe two. 
+
+That isn&apos;t survivng. 
+
+I decide, once again, that continuing is the only real option for me. </string>
+	</dict>
+	<key>keep going</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>keep going 2 blah</string>
+				<key>displayText</key>
+				<string>Keep Going</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>No matter how I try and justify staying, leaving always comes up as the best idea for survival. 
+
+I shake my head, take a deep breath, and remember my goal. 
+
+I put my makeshift paddle in the water. With each stroke, my mind pulls further from the island. I think less about the safety of staying, and think more about the uncertainty and excitement of the unknown. 
+
+Maybe I will find someone else. Someone like me. </string>
+	</dict>
 </dict>
 </plist>

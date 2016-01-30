@@ -21,6 +21,9 @@
 		7D6B685B1C5C289D00EB311B /* ChoiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D6B68591C5C289D00EB311B /* ChoiceTableViewCell.xib */; };
 		7D6B685E1C5C28B200EB311B /* PassageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B685C1C5C28B200EB311B /* PassageTableViewCell.swift */; };
 		7D6B685F1C5C28B200EB311B /* PassageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D6B685D1C5C28B200EB311B /* PassageTableViewCell.xib */; };
+		7D9AF49F1C5C7BCA00C65A9F /* BriLliant.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D9AF49E1C5C7BCA00C65A9F /* BriLliant.ttf */; };
+		7D9AF4A21C5C7CA100C65A9F /* Colors Of Autumn.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D9AF4A01C5C7CA100C65A9F /* Colors Of Autumn.ttf */; };
+		7D9AF4A31C5C7CA100C65A9F /* ThrowMyHandsUpintheAir.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D9AF4A11C5C7CA100C65A9F /* ThrowMyHandsUpintheAir.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		7D6B68591C5C289D00EB311B /* ChoiceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChoiceTableViewCell.xib; sourceTree = "<group>"; };
 		7D6B685C1C5C28B200EB311B /* PassageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassageTableViewCell.swift; sourceTree = "<group>"; };
 		7D6B685D1C5C28B200EB311B /* PassageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PassageTableViewCell.xib; sourceTree = "<group>"; };
+		7D9AF49E1C5C7BCA00C65A9F /* BriLliant.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BriLliant.ttf; sourceTree = "<group>"; };
+		7D9AF4A01C5C7CA100C65A9F /* Colors Of Autumn.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Colors Of Autumn.ttf"; sourceTree = "<group>"; };
+		7D9AF4A11C5C7CA100C65A9F /* ThrowMyHandsUpintheAir.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThrowMyHandsUpintheAir.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		7D0E83D01C5C457A00E98C8D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7D9AF49D1C5C7BCA00C65A9F /* Fonts */,
 				7D0E83D11C5C457A00E98C8D /* Assets.xcassets */,
 				7D0E83D31C5C459200E98C8D /* Story.plist */,
 			);
@@ -131,6 +138,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		7D9AF49D1C5C7BCA00C65A9F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7D9AF4A01C5C7CA100C65A9F /* Colors Of Autumn.ttf */,
+				7D9AF4A11C5C7CA100C65A9F /* ThrowMyHandsUpintheAir.ttf */,
+				7D9AF49E1C5C7BCA00C65A9F /* BriLliant.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,10 +207,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D6B68431C5B8BBA00EB311B /* LaunchScreen.storyboard in Resources */,
+				7D9AF4A21C5C7CA100C65A9F /* Colors Of Autumn.ttf in Resources */,
+				7D9AF4A31C5C7CA100C65A9F /* ThrowMyHandsUpintheAir.ttf in Resources */,
 				7D6B685B1C5C289D00EB311B /* ChoiceTableViewCell.xib in Resources */,
 				7D0E83D41C5C459200E98C8D /* Story.plist in Resources */,
 				7D6B685F1C5C28B200EB311B /* PassageTableViewCell.xib in Resources */,
 				7D0E83D21C5C457A00E98C8D /* Assets.xcassets in Resources */,
+				7D9AF49F1C5C7BCA00C65A9F /* BriLliant.ttf in Resources */,
 				7D6B683E1C5B8BBA00EB311B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
