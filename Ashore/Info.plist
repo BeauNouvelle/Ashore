@@ -4,9 +4,8 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>ThrowMyHandsUpintheAirBold.ttf</string>
 		<string>ThrowMyHandsUpintheAir.ttf</string>
-		<string>Colors Of Autumn.ttf</string>
-		<string>BriLliant.ttf</string>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>

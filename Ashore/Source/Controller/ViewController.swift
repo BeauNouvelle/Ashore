@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -15,12 +16,20 @@ class ViewController: UIViewController {
     lazy var storyManager = StoryManager()
     lazy var passages = [Passage]()
     
+    lazy var paperSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("paper1", ofType: "wav")!)
+    lazy var audioPlayer = AVAudioPlayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCells()
         
+        audioPlayer = try! AVAudioPlayer(contentsOfURL: paperSound)
+        audioPlayer.prepareToPlay()
+        
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.backgroundView = UIView()
+        tableView.backgroundView?.backgroundColor = UIColor.clearColor()
         
         storyManager.deleteSave()
         
@@ -42,9 +51,10 @@ class ViewController: UIViewController {
         let passageTitle = passages.last?.links[sender.tag]["passageTitle"]
         passages.append(storyManager.passageWithTitle(passageTitle!))
         
-        tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: passages.count-1, inSection: 0)], withRowAnimation: .Right)
+        audioPlayer.play()
         
-        tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 1), atScrollPosition: .Top, animated: true)
+        tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: passages.count-1, inSection: 0)], withRowAnimation: .Fade)
+        tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: passages.count-1, inSection: 0), atScrollPosition: .Top, animated: true)
     }
     
 }

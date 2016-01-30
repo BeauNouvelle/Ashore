@@ -21,20 +21,22 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jV8-7N-Jad" customClass="PassageLabel" customModule="Ashore" customModuleProvider="target">
-                        <rect key="frame" x="8" y="5" width="304" height="33.5"/>
+                        <rect key="frame" x="13" y="5" width="294" height="33.5"/>
                         <color key="backgroundColor" red="1" green="0.99505571142930871" blue="0.94019839638157898" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" name="ThrowMyHandsUpintheAir" family="Throw My Hands Up in the Air" pointSize="25"/>
+                        <color key="textColor" white="0.0" alpha="0.75092377533783783" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="jV8-7N-Jad" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="8v5-9Z-hPe"/>
+                    <constraint firstItem="jV8-7N-Jad" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="8v5-9Z-hPe"/>
                     <constraint firstItem="jV8-7N-Jad" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="HMQ-Nb-BET"/>
                     <constraint firstItem="jV8-7N-Jad" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="3" id="PZ9-Ii-pDh"/>
-                    <constraint firstItem="jV8-7N-Jad" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Ufn-iX-nQ5"/>
+                    <constraint firstItem="jV8-7N-Jad" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-5" id="Ufn-iX-nQ5"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="passageLabel" destination="jV8-7N-Jad" id="Hby-Hv-ekR"/>
             </connections>

@@ -12,7 +12,7 @@ import UIKit
 
 class PassageLabel: UILabel {
     
-    @IBInspectable var edgeInsets: UIEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5) {
+    @IBInspectable var edgeInsets: UIEdgeInsets = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10) {
         didSet {
             self.invalidateIntrinsicContentSize()
         }
@@ -25,6 +25,9 @@ class PassageLabel: UILabel {
         layer.shadowRadius = 5
         layer.shadowColor = UIColor.blackColor().CGColor
         layer.shadowOffset = CGSizeMake(0.0, 3.0)
+        
+        let backgroundImage = UIImage(named: "textile")
+        backgroundColor = UIColor(patternImage: backgroundImage!)
     }
     
     override func textRectForBounds(bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {

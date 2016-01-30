@@ -21,9 +21,10 @@
 		7D6B685B1C5C289D00EB311B /* ChoiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D6B68591C5C289D00EB311B /* ChoiceTableViewCell.xib */; };
 		7D6B685E1C5C28B200EB311B /* PassageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B685C1C5C28B200EB311B /* PassageTableViewCell.swift */; };
 		7D6B685F1C5C28B200EB311B /* PassageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D6B685D1C5C28B200EB311B /* PassageTableViewCell.xib */; };
-		7D9AF49F1C5C7BCA00C65A9F /* BriLliant.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D9AF49E1C5C7BCA00C65A9F /* BriLliant.ttf */; };
-		7D9AF4A21C5C7CA100C65A9F /* Colors Of Autumn.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D9AF4A01C5C7CA100C65A9F /* Colors Of Autumn.ttf */; };
 		7D9AF4A31C5C7CA100C65A9F /* ThrowMyHandsUpintheAir.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D9AF4A11C5C7CA100C65A9F /* ThrowMyHandsUpintheAir.ttf */; };
+		7D9AF4A61C5CA32500C65A9F /* paper1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D9AF4A51C5CA32500C65A9F /* paper1.wav */; };
+		7D9AF4A81C5CADBE00C65A9F /* ThrowMyHandsUpintheAirBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D9AF4A71C5CAD3A00C65A9F /* ThrowMyHandsUpintheAirBold.ttf */; };
+		7D9AF4AA1C5CDF4100C65A9F /* music.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7D9AF4A91C5CDF4100C65A9F /* music.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,9 +44,10 @@
 		7D6B68591C5C289D00EB311B /* ChoiceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChoiceTableViewCell.xib; sourceTree = "<group>"; };
 		7D6B685C1C5C28B200EB311B /* PassageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassageTableViewCell.swift; sourceTree = "<group>"; };
 		7D6B685D1C5C28B200EB311B /* PassageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PassageTableViewCell.xib; sourceTree = "<group>"; };
-		7D9AF49E1C5C7BCA00C65A9F /* BriLliant.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BriLliant.ttf; sourceTree = "<group>"; };
-		7D9AF4A01C5C7CA100C65A9F /* Colors Of Autumn.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Colors Of Autumn.ttf"; sourceTree = "<group>"; };
 		7D9AF4A11C5C7CA100C65A9F /* ThrowMyHandsUpintheAir.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThrowMyHandsUpintheAir.ttf; sourceTree = "<group>"; };
+		7D9AF4A51C5CA32500C65A9F /* paper1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = paper1.wav; sourceTree = "<group>"; };
+		7D9AF4A71C5CAD3A00C65A9F /* ThrowMyHandsUpintheAirBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThrowMyHandsUpintheAirBold.ttf; sourceTree = "<group>"; };
+		7D9AF4A91C5CDF4100C65A9F /* music.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = music.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		7D0E83D01C5C457A00E98C8D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7D9AF4A41C5CA32500C65A9F /* Audio */,
 				7D9AF49D1C5C7BCA00C65A9F /* Fonts */,
 				7D0E83D11C5C457A00E98C8D /* Assets.xcassets */,
 				7D0E83D31C5C459200E98C8D /* Story.plist */,
@@ -141,11 +144,19 @@
 		7D9AF49D1C5C7BCA00C65A9F /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				7D9AF4A01C5C7CA100C65A9F /* Colors Of Autumn.ttf */,
+				7D9AF4A71C5CAD3A00C65A9F /* ThrowMyHandsUpintheAirBold.ttf */,
 				7D9AF4A11C5C7CA100C65A9F /* ThrowMyHandsUpintheAir.ttf */,
-				7D9AF49E1C5C7BCA00C65A9F /* BriLliant.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7D9AF4A41C5CA32500C65A9F /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				7D9AF4A91C5CDF4100C65A9F /* music.caf */,
+				7D9AF4A51C5CA32500C65A9F /* paper1.wav */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,14 +218,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D6B68431C5B8BBA00EB311B /* LaunchScreen.storyboard in Resources */,
-				7D9AF4A21C5C7CA100C65A9F /* Colors Of Autumn.ttf in Resources */,
 				7D9AF4A31C5C7CA100C65A9F /* ThrowMyHandsUpintheAir.ttf in Resources */,
 				7D6B685B1C5C289D00EB311B /* ChoiceTableViewCell.xib in Resources */,
 				7D0E83D41C5C459200E98C8D /* Story.plist in Resources */,
 				7D6B685F1C5C28B200EB311B /* PassageTableViewCell.xib in Resources */,
 				7D0E83D21C5C457A00E98C8D /* Assets.xcassets in Resources */,
-				7D9AF49F1C5C7BCA00C65A9F /* BriLliant.ttf in Resources */,
 				7D6B683E1C5B8BBA00EB311B /* Main.storyboard in Resources */,
+				7D9AF4A81C5CADBE00C65A9F /* ThrowMyHandsUpintheAirBold.ttf in Resources */,
+				7D9AF4AA1C5CDF4100C65A9F /* music.caf in Resources */,
+				7D9AF4A61C5CA32500C65A9F /* paper1.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +361,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nouvelle.Ashore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -360,6 +373,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nouvelle.Ashore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
