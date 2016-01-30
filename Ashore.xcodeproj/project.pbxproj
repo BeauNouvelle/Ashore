@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7D0E83D21C5C457A00E98C8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E83D11C5C457A00E98C8D /* Assets.xcassets */; };
 		7D0E83D41C5C459200E98C8D /* Story.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E83D31C5C459200E98C8D /* Story.plist */; };
+		7D0E83D61C5C657700E98C8D /* PassageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0E83D51C5C657600E98C8D /* PassageLabel.swift */; };
 		7D6B683E1C5B8BBA00EB311B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D6B683C1C5B8BBA00EB311B /* Main.storyboard */; };
 		7D6B68431C5B8BBA00EB311B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D6B68411C5B8BBA00EB311B /* LaunchScreen.storyboard */; };
 		7D6B68501C5B8D9800EB311B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B684B1C5B8D9800EB311B /* AppDelegate.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		7D0E83D11C5C457A00E98C8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D0E83D31C5C459200E98C8D /* Story.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Story.plist; sourceTree = "<group>"; };
+		7D0E83D51C5C657600E98C8D /* PassageLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassageLabel.swift; sourceTree = "<group>"; };
 		7D6B68351C5B8BBA00EB311B /* Ashore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ashore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6B683D1C5B8BBA00EB311B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D6B68421C5B8BBA00EB311B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				7D6B68591C5C289D00EB311B /* ChoiceTableViewCell.xib */,
 				7D6B685C1C5C28B200EB311B /* PassageTableViewCell.swift */,
 				7D6B685D1C5C28B200EB311B /* PassageTableViewCell.xib */,
+				7D0E83D51C5C657600E98C8D /* PassageLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D6B685E1C5C28B200EB311B /* PassageTableViewCell.swift in Sources */,
+				7D0E83D61C5C657700E98C8D /* PassageLabel.swift in Sources */,
 				7D6B68551C5C209B00EB311B /* Passage.swift in Sources */,
 				7D6B68501C5B8D9800EB311B /* AppDelegate.swift in Sources */,
 				7D6B68571C5C242C00EB311B /* ChoiceButton.swift in Sources */,

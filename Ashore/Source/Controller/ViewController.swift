@@ -18,6 +18,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCells()
+        
+        tableView.estimatedRowHeight = 100
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
         storyManager.deleteSave()
         
         if let savedStory = storyManager.load() {
@@ -38,7 +42,10 @@ class ViewController: UIViewController {
         // TODO: Add new passage
         let passageTitle = passages.last?.links[sender.tag]["passageTitle"]
         passages.append(storyManager.passageWithTitle(passageTitle!))
-        tableView.reloadData()
+        
+        tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: passages.count-1, inSection: 0)], withRowAnimation: .Right)
+        
+        tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 1), atScrollPosition: .Top, animated: true)
     }
     
 }
@@ -61,7 +68,8 @@ extension ViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCellWithIdentifier("PassageCell") as! PassageTableViewCell
             
             let passage = passages[indexPath.row]
-            cell.textLabel?.text = passage.passage
+        
+            cell.passageLabel?.text = passage.passage
             
             return cell
         }

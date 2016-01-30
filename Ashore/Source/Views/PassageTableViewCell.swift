@@ -10,7 +10,8 @@ import UIKit
 
 class PassageTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var passageTextView: UITextView!
+    
+    @IBOutlet weak var passageLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
