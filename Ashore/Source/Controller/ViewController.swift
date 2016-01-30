@@ -47,7 +47,7 @@ class ViewController: UIViewController {
             headphoneImageView.removeFromSuperview()
             passages = savedStory
         } else {
-            passages = [storyManager.passageWithTitle("leaving the island")] // name of first passage in story
+            passages = [storyManager.passageWithTitle("Reflect")] // name of first passage in story
             introHeadphoneAnimation()
         }
         tableView.reloadData()

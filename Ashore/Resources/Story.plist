@@ -2,62 +2,67 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>leaving the island</key>
+	<key>Reflect</key>
 	<dict>
 		<key>links</key>
 		<array>
 			<dict>
 				<key>passageTitle</key>
-				<string>setting out</string>
+				<string>Leave</string>
 				<key>displayText</key>
-				<string>Setting Out</string>
+				<string>Set Sail</string>
 			</dict>
 		</array>
 		<key>passage</key>
-		<string>Once again, here I am.
+		<string>Once again, here I am. 
 
-I look back at the beach, remembering the time I spent there. The choices I made. 
+I look back at the beach, remembering the time I spent here. The choices I made. 
 
-It makes me remember how things used to be. But, no. I can&apos;t think about that now. All I need to think about is surviving. Yeah. Not living. Living is thriving. Living is exhillerating! 
+It makes me remember how things used to be. But, no. Not today. I can&apos;t think about that now. All I need to think about is surviving. 
 
-I am survivng. 
+Not living. 
 
-This little raft has served me well, but it will need to be replaced. This island had barely enough resources to even make a fire last night. I am going to just cross my fingers that I find more land soon. 
+Living is thriving. Living is exhilarating! 
 
-One again, here I am. Setting out into the unknown. 
+I am surviving. 
 
-Surviving. 
-</string>
+I look down at my little raft. It wasn&apos;t my best, but I didn&apos;t have much to work with.
+
+This island had barely enough resources to even make a fire last night. I am going to just cross my fingers that I find more land soon. 
+
+Once again, here I am. Setting out into the unknown. 
+
+Surviving. </string>
 	</dict>
-	<key>setting out</key>
+	<key>Leave</key>
 	<dict>
 		<key>links</key>
 		<array>
 			<dict>
 				<key>passageTitle</key>
-				<string>keep going</string>
+				<string>Keep going</string>
 				<key>displayText</key>
-				<string>Keep Going</string>
+				<string>Keep Paddling</string>
 			</dict>
 			<dict>
 				<key>passageTitle</key>
-				<string>turn back</string>
+				<string>Turn Back</string>
 				<key>displayText</key>
 				<string>Turn Back</string>
 			</dict>
 		</array>
 		<key>passage</key>
-		<string>It takes me a while, but I finally make it past the surf and into the break. The water is deep here. A beautiful shimmering grey. 
+		<string>It takes me a while, but I finally make it past the surf and into the break. The water is deep here. A beautiful, shimmering grey. 
 
-I battle with myself. The island had barely any resources... But should I really gamble on whether I can make it to another island before this raft disintergrates?</string>
+I battle with myself. The island had barely any resources... But should I really gamble on whether I can make it to another island before this raft disintegrates?</string>
 	</dict>
-	<key>turn back</key>
+	<key>Turn Back</key>
 	<dict>
 		<key>links</key>
 		<array>
 			<dict>
 				<key>passageTitle</key>
-				<string>keep going</string>
+				<string>Keep going</string>
 				<key>displayText</key>
 				<string>Keep Going</string>
 			</dict>
@@ -67,33 +72,980 @@ I battle with myself. The island had barely any resources... But should I really
 
 I put my makeshift paddle in the water to the left of the raft, preparing to turn it around. I take one more look out to the sea, and then another look at the island. 
 
-It looks about 200m away, now. And I can see how small it really is. 
+It seems to be about 200 metres away, now. And I can see how small it really is. 
 
 I would last a day, maybe two. 
 
-That isn&apos;t survivng. 
+That isn&apos;t surviving. 
 
-I decide, once again, that continuing is the only real option for me. </string>
+I decide, once again, that continuing is the only real option for me.</string>
 	</dict>
-	<key>keep going</key>
+	<key>Keep going</key>
 	<dict>
 		<key>links</key>
 		<array>
 			<dict>
 				<key>passageTitle</key>
-				<string>keep going</string>
+				<string>Keep going.</string>
 				<key>displayText</key>
-				<string>Keep Going</string>
+				<string>Continue</string>
 			</dict>
 		</array>
 		<key>passage</key>
-		<string>No matter how I try and justify staying, leaving always comes up as the best idea for survival. 
+		<string>No matter how I try to justify staying, leaving always comes up as the best idea for survival. 
 
 I shake my head, take a deep breath, and remember my goal. 
 
-I put my makeshift paddle in the water. With each stroke, my mind pulls further from the island. I think less about the safety of staying, and think more about the uncertainty and excitement of the unknown. 
+I put my paddle in the water. With each stroke, my mind pulls further from the island. I think less about the safety of staying, and think more about the uncertainty and excitement of the unknown. 
 
-Maybe I will find someone else. Someone like me. </string>
+Maybe I will find someone else. Someone like me.</string>
+	</dict>
+	<key>Keep going.</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Harder</string>
+				<key>displayText</key>
+				<string>Hurry</string>
+			</dict>
+			<dict>
+				<key>passageTitle</key>
+				<string>Conserve</string>
+				<key>displayText</key>
+				<string>Conserve</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>I have been paddling for almost a whole day, now. I think, anyway. I was never good at telling the time by looking at the sun, but if I had to guess I would say it is about 5 in the evening. 
+
+I still have a few more hours of daylight. Maybe three hours... Maybe a little less.
+
+I really need to make it to shore. 
+
+I can either paddle a bit harder, and hopefully reach land sooner. Or I can try and conserve energy and keep a steady pace, meaning it could take longer to reach land...</string>
+	</dict>
+	<key>Conserve</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Conserve.</string>
+				<key>displayText</key>
+				<string>Continue</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>Although the sun will be setting soon, I would rather not tire myself out. Who knows what I will need to do once I get to land.
+
+It may take me hours before I find firewood, or suitable shelter, or food. 
+
+Food. 
+
+A word that had a totally different meaning to me, before all of this. 
+
+Buttery toast... Roasted potatoes swimming in pepper gravy... A burger. What I wouldn&apos;t give for a burger. If I close my eyes, I can almost imagine myself sitting in my favourite café back home. I can almost taste the tangy house-made mustard... 
+
+If I had any left, I might have shed a few tears. But crying won&apos;t bring everyone back. Plus, my stomach was growling at my brain to stop tormenting it. 
+
+I put those thoughts back in my imaginary filing cabinet labelled &quot;Before&quot;.</string>
+	</dict>
+	<key>Conserve.</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Land</string>
+				<key>displayText</key>
+				<string>Row to Shore</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>I have been paddling for hours. The sun is nestled snugly between a few cloud-pillows, ready to go to sleep. 
+
+I think back to my old bed. My big, puffy pillows. I suddenly feel a pang of jealousy towards the sun. Which is ridiculous. The seawater must be making me crazy. But I thought that was only when you drank it?
+
+Wait... 
+
+What is that? Could it be? 
+
+Yes! 
+
+Land!! I made it!!
+
+I start paddling harder. The possibility of sleep suddenly gives me a burst of energy.</string>
+	</dict>
+	<key>Harder</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Harder.</string>
+				<key>displayText</key>
+				<string>Continue</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>That sun isn&apos;t getting any higher.
+
+I can freeze out here in the middle of the ocean, or I can grit my teeth and get to shore as fast as I can. 
+
+If I am going to survive, I better get moving.</string>
+	</dict>
+	<key>Harder.</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Land</string>
+				<key>displayText</key>
+				<string>Row to Shore</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>My arms are starting to ache... Why did I think this was a good idea?
+
+I guess sometimes powering through is not the best idea. 
+
+Wait...
+
+I can see something in the distance. 
+
+Could it be...?
+
+Yes! Land! 
+
+I made it!! 
+
+I can barely make it out on the horizon, but it is definitely there. Seeing land gives me the motivation I desperately needed to keep going.</string>
+	</dict>
+	<key>Land</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Roll over</string>
+				<key>displayText</key>
+				<string>Roll Over</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>I finally made it! It took longer than I thought, but I did it. The sun has totally disappeared now, so I need to be careful. 
+
+I battle with the waves in the surf to get to shore. Everything I see seems to have a silver glow, from the moonlight. 
+
+The waves are beautiful. Like shimming, silver tipped mountains. The wet sand ahead seems luminescent.
+
+After a few more strokes, I make it to the sand. 
+
+My raft is well and truly dead now. It had a good life, and it served me well. 
+
+I leave it in the water, not bothering to pull it onto the sand with me. It would be too wet to use for firewood, and it’s definitely not going to help with shelter. 
+
+I take my first steps onto the beach, enjoy the smooth, cool sand between my toes. I kneel into it. The grains make marks on my skin, but I love it. It reminds me of how far I have come.</string>
+	</dict>
+	<key>Roll over</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Get up</string>
+				<key>displayText</key>
+				<string>Get Up</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>I roll onto my back, letting my hair caress the sand. I feel the waves lapping at my toes, my heels, and my ankles. 
+
+I look up at the stars and the moon. 
+
+Before all this, I loved looking up at the sky and imagining the possibilities of the universe. 
+
+How many other beings in existence are also looking out there? Maybe they can see our planet, and they&apos;re watching me.
+
+But now I will never know. 
+
+I prop myself up on my elbows, looking at the water, where I came from. 
+
+“I made it.” I think, triumphantly.</string>
+	</dict>
+	<key>Get up</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>food</string>
+				<key>displayText</key>
+				<string>Search</string>
+			</dict>
+			<dict>
+				<key>passageTitle</key>
+				<string>camp</string>
+				<key>displayText</key>
+				<string>Camp</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>As much as I wish I could lay here forever, I need to start making camp. 
+
+My stomach growls loudly, but my eyes are fighting to stay open. My limbs, especially my arms, are aching and heavy from rowing all day. 
+
+I don&apos;t know whether to look for some food, or just make camp and get some rest.</string>
+	</dict>
+	<key>food</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>food 2</string>
+				<key>displayText</key>
+				<string>Continue</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>My stomach growls again, making the decision for me. 
+
+Right. Time to eat. 
+
+Sure, it won&apos;t be a burger, but I am not in a position to be fussy. 
+
+I stand up and look around. The island seems pretty bare, but I can see a few bushes and short palm trees up ahead. 
+
+Instinctually, my legs start carrying me towards them. The possibility of food takes over my thoughts.</string>
+	</dict>
+	<key>food 2</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>camp 2</string>
+				<key>displayText</key>
+				<string>Camp</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>On my way to the bushes, I pick up a few smooth stones and shells that I could possibly turn into tools. They will definitely come in handy when I try and make my next raft. 
+
+As I get closer to the bushes, my heart sinks. They&apos;re bare. Just plain old leafy bushes, and coconut-less palm trees. 
+
+My stomach gurgles, and I scowl. &quot;I get it, okay? You&apos;re hungry.&quot; 
+
+Now I know I must be going crazy. I am literally talking to an organ. 
+
+I decide to strip some branches and palm fronds from the bushes and trees. The fronds could be used to make shelter and a new raft, and the branches can be used to start a fire. They seem dry enough. 
+
+I turn back to where I landed, and start walking. 
+
+I&apos;m exhausted, anyway, so I should make camp. But this was definitely not a waste of time.</string>
+	</dict>
+	<key>camp</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>camp 2</string>
+				<key>displayText</key>
+				<string>Continue</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>As if to make a point, a yawn escapes me. I realise how truly exhausted I am. My arms feel like blocks of concrete, and my legs are barely able to hold me steady any longer.  
+Besides, it is really dark now and I could hurt myself if I go looking for food. 
+
+I scan my visible surroundings for any kind of shelter, or anything that could possibly be made into a suitable one. 
+
+While I search for a good place to settle, I pick up any stray sticks or palm fronds I find. They&apos;ll definitely be handy later.</string>
+	</dict>
+	<key>camp 2</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>camp 3</string>
+				<key>displayText</key>
+				<string>Continue</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>I spot what looks to be a group of steep rocks. I could probably weave a roof out of the stray leaves and fronds I picked up... It is my best chance of survival right now. 
+
+Its either that, or take my chances sleeping on the beach. 
+
+I sleepily make my way to the crag, and set to work weaving a makeshift roof out of the foliage I picked up. 
+
+I think back on all the times I have made shelter on similar islands, and how I barely knew what to do the first time. I had next to no experience with anything even remotely outdoorsy.
+
+I wasn&apos;t lucky like some, before all this. I lived in a big city. 
+
+Concrete, bitumen, cobblestone, cement, rock.
+
+I didn&apos;t see anything green unless it was in a supermarket or at the zoo. 
+
+Now I would be lucky to see concrete.</string>
+	</dict>
+	<key>camp 3</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Morning</string>
+				<key>displayText</key>
+				<string>Next Day</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>After an eternity of weaving, I finish making a little roof. I use the leftover resources to weave a mat to lay on. Usually, they&apos;re made a lot better, but I have had a long day. Plus, weaving in the dark is pretty hard. 
+
+I manage to wedge the roof between two of the larger rocks, and lay the mat underneath it. 
+
+I almost collapse onto the mat. It may not be a feather mattress, but its better than jagged, dirty, cold stone. 
+
+I can feel my eyelids get heavier and heavier with each passing second. 
+
+&quot;Goodnight,&quot; I say to myself. It gives me a little bit of comfort to hear a voice, even if it my own. 
+
+And then, I succumb to sleep.</string>
+	</dict>
+	<key>Morning</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Get up 1</string>
+				<key>displayText</key>
+				<string>Get Food</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>I wake up to a familiar feeling of warmth on my face, and open my eyes to the blinding sun.
+
+It is not too high, yet, maybe just after 9am. 
+
+It seems that my woven roof would be great against rain, but not so much against the sun. 
+
+I must admit, it is sort of nice to wake up on the beach. Most mornings, anyway. All of my friends would have been so jealous, before. 
+
+Sometimes, I like to imagine they&apos;re also out there. Steph paddling her raft, too. Serena escaped to her dad&apos;s hunting shack, like she said she would. Adam is living in the country, on a farm. 
+
+Surviving. 
+
+Maybe even living. 
+
+There is a difference. 
+
+But I know better. I saw what happened. I know. 
+
+I once again put those thoughts away, and bring myself back. I am here. I am alive. I am hungry. 
+
+Damn. 
+
+Ok. Time to look for some food.</string>
+	</dict>
+	<key>Get up 1</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>set off</string>
+				<key>displayText</key>
+				<string>Head Out</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>I feel well rested, but my arms and lower back feel stiff from rowing all yesterday. 
+
+I stretch, and feel my joints popping. Short lived relief from the pain. 
+
+I stand up and begin to survey the area. 
+
+It is almost as if I am on a totally different island than the one I landed on. The silver tipped waves have now turned a foamy blue and white. The shimmery wet sand is now a darker brown colour. I can see the foot steps I left last night during my short exploration. 
+
+The beach is on my left, so I look to the right.
+
+There really isn&apos;t much to see. There is mostly just sand, with a few clusters of dry, long grass. Like most of the other islands, resources are scarce. But I will do what I can with what there is.</string>
+	</dict>
+	<key>set off</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Hopeless</string>
+				<key>displayText</key>
+				<string>Hopeless</string>
+			</dict>
+			<dict>
+				<key>passageTitle</key>
+				<string>Proud</string>
+				<key>displayText</key>
+				<string>Proud</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>As I look out at the tiny, bare island I get a familiar feeling. The best way I could describe it is...</string>
+	</dict>
+	<key>Hopeless</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Gather</string>
+				<key>displayText</key>
+				<string>Gather</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>... Hopeless. 
+
+Day after day... 
+
+Island after island...
+
+Sand. Rock. Waves. Dry grass. 
+
+Day after day after day. 
+
+Is there any room for hope in this world? 
+
+I am alone. Me. The grass. The sand. The rocks. 
+
+Once again, my mind begins to draw the line between surviving and living. Is there a point to surviving if that is all you do?
+
+I think back to my life before. 
+
+The little things. 
+
+Shepherds pie, every Tuesday. Like my dad made. Like his dad made, too. Our Tuesday night ritual. Shepherds pie, red wine, wipe the benches, watch an episode or two of our favourite show. Sleep. Repeat. Next Tuesday, we do the same thing. 
+
+Was that living? Or was that just habit? 
+
+Ritualistic habit. 
+
+No adventure. 
+
+For a moment, I feel lucky. It is a fleeting moment, but it was there. Before, I would have dreamt of this kind of adventure.</string>
+	</dict>
+	<key>Proud</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Gather</string>
+				<key>displayText</key>
+				<string>Gather</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>... Proud. 
+
+I survived. I am still surviving. 
+
+I made it. 
+
+Every day. 
+
+Every island. 
+
+I gather, I build, I create. 
+
+I survive. 
+
+Where others would have given up, I kept going. 
+
+I am tenacious. My will to live may be fragile, but it is there. 
+
+Some may argue that there is no point to carrying on. Some may argue that I should just give up, pick a nice sandy beach, and let the waves carry me out. 
+
+Sure, I get lonely. I get depressed. Sometimes, I do just want to pick a beach and let the waves carry me out. But without those days and without the struggles, I could never truly appreciate the good. 
+
+So I gather, I build, and I create. 
+
+My daily ritual. Surviving.</string>
+	</dict>
+	<key>Gather</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Dig</string>
+				<key>displayText</key>
+				<string>Dig</string>
+			</dict>
+			<dict>
+				<key>passageTitle</key>
+				<string>Dive</string>
+				<key>displayText</key>
+				<string>Dive</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>I pull myself out of my thoughts, and remember what I was doing. The sun is still not very high, so I have a few hours to spend gathering whatever I can.
+
+I make a checklist in my head;
+
+- Find food
+- Find more food
+- Find as much food as I can
+
+Ok, so my hunger is distracting me right now. I need to deal with that. 
+
+It doesn&apos;t seem like there is much to eat on this island, but I could dig up some of the grass clusters and bushes and hopefully find some roots. I could char them up nicely on a fire! And I may even find some that are full of moisture. 
+
+The only other option, of course, is to try my luck in the water. Life is rare, these days. So my chances of finding anything in there is slim. Oysters, muscles, octopus... My mouth starts watering at the thought.</string>
+	</dict>
+	<key>Dive</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Dive 2</string>
+				<key>displayText</key>
+				<string>Continue</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>Despite how “appetising” the roots sound, I think I would prefer some seafood right now. So I will take my chances in the water. 
+
+The water is a brilliant blue, shimmering in the sun. 
+
+Flecks of gold, silver, sapphire, and diamond ripple through the waves. 
+
+Ever since I was young, I always loved the beach. I could sit for hours watching the waves roll in, and then sluggishly retreat. I would chase them back into the surf. Then when it was their turn to chase me, I would turn and sprint away. It was a game I always loved. 
+
+For a brief moment, I considering playing again. Maybe after I eat something.</string>
+	</dict>
+	<key>Dive 2</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Disappointed</string>
+				<key>displayText</key>
+				<string>Disappointed</string>
+			</dict>
+			<dict>
+				<key>passageTitle</key>
+				<string>Unsurprised</string>
+				<key>displayText</key>
+				<string>Unsurprised</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>I take a few steps into the waves. They&apos;re cool against my ankles, and I let out a sigh. 
+
+It’s a refreshing feeling. 
+
+I walk further into the waves, till it reaches my waist. 
+
+I look around, searching for any signs of sea life. 
+
+... But there doesn&apos;t seem to be anything. Not even seagrass or coral. 
+
+I spend another few minutes walking around, checking everywhere I can. Just in case. 
+
+I feel pretty...</string>
+	</dict>
+	<key>Disappointed</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Dig 2</string>
+				<key>displayText</key>
+				<string>Dig</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>Even though I wasn&apos;t expecting anything, it is hard to not feel disappointed. I would have really loved something other than roots, grass, berries, or fruit for once. 
+
+The only option now is to go back to the grass, and dig for roots. 
+
+I walk back out of the waves, and start making my way over to the largest cluster of grass.</string>
+	</dict>
+	<key>Unsurprised</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Dig 2</string>
+				<key>displayText</key>
+				<string>Dig</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>I guess it is hard to be disappointed or surprised when you already know the outcome. 
+
+But there was no harm in trying. 
+
+The only option now is to go back to the grass, and dig for roots. 
+
+I walk back out of the waves, and start making my way over to the largest cluster of grass.</string>
+	</dict>
+	<key>Dig</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Dig 2</string>
+				<key>displayText</key>
+				<string>Continue</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>As much as I would love some seafood right now, I would rather try digging for roots. 
+
+I look towards the water, and sigh. Ever since I was young, I always loved the beach. I could sit for hours watching the waves roll in, and then sluggishly retreat. I would chase them back into the surf. Then when it was their turn to chase me, I would turn and sprint away. It was a game I always loved. 
+
+For a brief moment, I considering playing again. Maybe after I eat something.
+
+I begin making my way to the largest cluster of dry grass I can see. It is spikey, long, and very unwelcoming. 
+
+But it is my best chance of food.</string>
+	</dict>
+	<key>Dig 2</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Dig 3</string>
+				<key>displayText</key>
+				<string>Continue</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>I set to work digging up the grass. It isn&apos;t very interesting work, so my mind begins to wander. 
+
+I think about before. 
+
+The little problems I would have, that now frankly seem laughable. 
+
+Accidentally recording over a TV show. 
+
+A car in front of me taking too long to turn. 
+
+When I would press too hard while writing and the tip of my pencil would snap. 
+
+I remember my name. 
+
+Before, someone&apos;s name was their identity. You have one almost the moment you are born. 
+
+It has been so long since I heard my name. 
+
+I stop digging, for a moment. I take a deep breath and close my eyes. 
+
+I say my name. 
+
+The sound of my voice joins the ambience of the waves lulling and the grass rustling. 
+
+A song that only needed a voice. 
+
+Is that name still me? Or is that who I have left behind? 
+
+I get back to my digging.</string>
+	</dict>
+	<key>Dig 3</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Eat roots raw</string>
+				<key>displayText</key>
+				<string>Raw</string>
+			</dict>
+			<dict>
+				<key>passageTitle</key>
+				<string>Make a fire and cook roots</string>
+				<key>displayText</key>
+				<string>Cook</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>My finger nails have become well and truly caked with sand. It is an uncomfortable feeling, but all I care about right now is getting out of the sun. 
+
+It is around midday. The sand has become warm, and the water looks more and more inviting with each moment. 
+
+I look down at the modest collection of roots I gathered. I have definitely seen better. 
+
+Most of them were thin, wiry, and frankly quite unappetising. But three were thick and slightly soft, which was good news. It meant they were full of water. 
+
+If I ate the roots raw, I would get all the moisture they&apos;ve absorbed. They would be bitter, powdery, and chewy... But refreshing. 
+
+Or, I could go back to camp and start a fire. That way, I could char the roots and give them a nice smokey flavour. They would become hard and brittle. Sort of like jerky. 
+
+Either way, I need to get back to my shelter before I become the charred one.</string>
+	</dict>
+	<key>Eat roots raw</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Arrive at camp.</string>
+				<key>displayText</key>
+				<string>Go to Camp</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>Even though the roots would be nicer charred, I decide to eat them raw. The sun has been making me sweat a lot, so I really need to rehydrate. 
+
+As I slowly walk back to my little stone mansion, I begin taking bites of the biggest root. It tastes like... Liquorice?
+
+This was unexpected. 
+
+Now I am glad I chose to eat them raw. Hot, smokey liquorice? My stomach roils at the thought. 
+
+I then chuckle to myself, remembering the time my younger brother ate some really soft, sticky liquorice. It turned his teeth black for an hour. 
+
+I wonder to myself if I will ever eat real liquorice again. 
+
+Not the sweet, soft kind. The strong, salty, real stuff. The stuff that makes you pull a sour face. 
+
+I never liked it. Now I would give anything to have some. 
+
+I look down at the root I am eating, and hate it a little bit less.</string>
+	</dict>
+	<key>Make a fire and cook roots</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Arrive at camp.</string>
+				<key>displayText</key>
+				<string>Get to Camp</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>I make my way back to my little stone mansion, almost excited at the idea of cooking up the roots. It has been almost an entire day since I ate the last of my food supplies that I gathered from other islands. 
+
+I just need to be a little bit more patient. 
+
+Only a few more metres. 
+
+...
+
+Almost there
+
+...
+
+Ok. I don&apos;t think I can wait any longer. 
+
+I take one of the smaller roots, and do my best to dust off the sand. I put the entire thing in my mouth, and start chewing. 
+
+Every few seconds, I cringe as a grain of sand crunches between my teeth. It reminds me of neglecting to wash lettuce before making a salad... Or peeling potatoes, and not washing them well enough. 
+
+I close my eyes and try and imagine I am eating a potato. It almost works. Until I feel the sand in my teeth again. I cringe. 
+
+Only a few more paces.</string>
+	</dict>
+	<key>Arrive at camp.</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Finish eating</string>
+				<key>displayText</key>
+				<string>Finish Eating</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>At camp, I set down the rest of my roots on my little woven mat. 
+
+My shelter is starting to look almost homely. 
+
+I look at the roof and the mat, feeling a swell of pride. 
+
+Months ago, I barely even knew how to make a daisy chain, let alone weave together a mat, a roof, and build a raft. 
+
+Before, I never was very crafty. I could hardly even cook. Microwave meals were my go-to. Or ordering pizza. I didn&apos;t even put together my own furniture. Tom, my neighbour, would often come over to help me put together a flat-packed table, or change a lightbulb in exchange for some beers or half of my pizza. 
+
+He deserves be here. He deserves to have survived. He deserves be surviving. 
+
+I bundle a few of the leaves and sticks I found earlier into a pile, and strike some small rocks together to create a spark. 
+
+I wish I had a microwave.</string>
+	</dict>
+	<key>Finish eating</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Make raft</string>
+				<key>displayText</key>
+				<string>Build Raft</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>The sun has begun to set by the time I finish all the roots. Some charred. Some chewy. Most wiry. None satisfying. But they did take away most of the hunger-pains. 
+
+As I stare into the fire, I consider the future. The immediate future. 
+
+Not &quot;Will I want kids one day?&quot; or &quot;Should I start saving for a house yet?&quot;, but &quot;When will I eat next?&quot; and &quot;What if this is the last island?&quot;.
+
+The thought of another island reminds me of my raft. It&apos;s remains have long been swept away in the waves. 
+
+I survey my camp, noting all my remaining resources. I still have a fair amount of palm fronds and sticks left, which I can use to combine the roof and the mat into a hopefully seaworthy raft. 
+
+It is definitely worth a try, anyway.</string>
+	</dict>
+	<key>Make raft</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Stargaze.</string>
+				<key>displayText</key>
+				<string>Stargaze</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>What seems like hours pass, filled with frustration. This is a tougher task than I first thought. Although, by now, I am not exactly new to the sea-vessel building business, I have still not quite mastered it. 
+
+I wrestle with the palm fronds, battle with the sticks, and almost give up. 
+
+But I don&apos;t. Not yet. 
+
+I have proven myself a worthy survivor, I think. 
+
+...
+
+The sun has set deeply in the sky by the time I finish. Once again, I can feel the fingers of fatigue start to take a hold of me. 
+
+Another night, same sky. Same Moon. Same stars. 
+
+I lay on my back, and look up at the sky. Like I did last night.</string>
+	</dict>
+	<key>Stargaze.</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Sorrow</string>
+				<key>displayText</key>
+				<string>Sorrow</string>
+			</dict>
+			<dict>
+				<key>passageTitle</key>
+				<string>Hope</string>
+				<key>displayText</key>
+				<string>Hope</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>As I stare out into the unknown, I can&apos;t help but wonder:
+
+Was this all some plan? Was this meant to happen? 
+
+Were my friends, family, pets, and life meant to be taken from me? 
+
+Does it really matter? 
+
+I usher those dark thoughts out of my mind, and try and bring the light in. 
+
+I count back from today, remembering all that I can. All the details of the day before, and the day before that, and the day before that. Until I can&apos;t remember any further back. 
+
+A feeling creeps it&apos;s way in...</string>
+	</dict>
+	<key>Hope</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Reflect</string>
+				<key>displayText</key>
+				<string>Reflect</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>Maybe I will find someone. 
+
+Maybe tomorrow will be the day. 
+
+Maybe tomorrow I will catch a fish. 
+
+Maybe tomorrow I will find more roots.
+
+Maybe tomorrow I will live. Truly, live.  
+
+All I have left is my hope. 
+
+I ponder this, as I close my eyes. 
+
+Tomorrow is a new day.
+
+I sleep. 
+
+Facing the stars.</string>
+	</dict>
+	<key>Sorrow</key>
+	<dict>
+		<key>links</key>
+		<array>
+			<dict>
+				<key>passageTitle</key>
+				<string>Reflect</string>
+				<key>displayText</key>
+				<string>Reflect</string>
+			</dict>
+		</array>
+		<key>passage</key>
+		<string>The feeling is almost tangible. 
+
+Like a glass pane. Right in front of me. 
+
+I can&apos;t quite see it, but I know it is there. 
+
+Tomorrow is new day.
+
+More disappointment. 
+
+More loneliness.
+
+Less roots.
+
+No fish.
+
+Surviving. 
+
+Never living. 
+
+I ponder this, as I close my eyes.
+
+Tomorrow is a new day.
+
+I sleep.
+
+Facing the stars.</string>
 	</dict>
 </dict>
 </plist>
