@@ -12,19 +12,29 @@ import AVFoundation
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var backgroundImageView: UIImageView!
     
+    @IBOutlet weak var headphoneImageView: UIImageView!
     lazy var storyManager = StoryManager()
     lazy var passages = [Passage]()
     
     lazy var paperSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("paper1", ofType: "wav")!)
-    lazy var audioPlayer = AVAudioPlayer()
+    lazy var music = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("music", ofType: "caf")!)
+    lazy var musicPlayer = AVAudioPlayer()
+    lazy var paperPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCells()
         
-        audioPlayer = try! AVAudioPlayer(contentsOfURL: paperSound)
-        audioPlayer.prepareToPlay()
+        musicPlayer = try! AVAudioPlayer(contentsOfURL: music)
+        musicPlayer.prepareToPlay()
+        musicPlayer.numberOfLoops = -1
+        musicPlayer.play()
+        
+        paperPlayer = try! AVAudioPlayer(contentsOfURL: paperSound)
+        paperPlayer.volume = 0.50
+        paperPlayer.prepareToPlay()
         
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -34,11 +44,19 @@ class ViewController: UIViewController {
         storyManager.deleteSave()
         
         if let savedStory = storyManager.load() {
+            headphoneImageView.removeFromSuperview()
             passages = savedStory
         } else {
             passages = [storyManager.passageWithTitle("leaving the island")] // name of first passage in story
+            introHeadphoneAnimation()
         }
         tableView.reloadData()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: passages.count-1, inSection: 0), atScrollPosition: .Top, animated: false)
     }
     
     func registerCells() {
@@ -46,12 +64,32 @@ class ViewController: UIViewController {
         tableView.registerNib(UINib(nibName: "PassageTableViewCell", bundle: nil), forCellReuseIdentifier: "PassageCell")
     }
     
+    func introHeadphoneAnimation() {
+        tableView.hidden = true
+        tableView.alpha = 0.0
+        headphoneImageView.hidden = false
+        
+        let delayInSeconds = 4
+        
+        let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delayInSeconds) * Int64(NSEC_PER_SEC))
+        dispatch_after(popTime, dispatch_get_main_queue(), { () -> Void in
+            UIView.animateWithDuration(1.0, animations: { () -> Void in
+                self.headphoneImageView.alpha = 0.0
+                self.tableView.hidden = false
+                self.tableView.alpha = 1.0
+                }, completion: { (bool) -> Void in
+                    self.headphoneImageView.removeFromSuperview()
+            })
+        })
+    }
+    
     func tappedChoice(sender: ChoiceButton) {
         
         let passageTitle = passages.last?.links[sender.tag]["passageTitle"]
         passages.append(storyManager.passageWithTitle(passageTitle!))
+        storyManager.save(passages)
         
-        audioPlayer.play()
+        paperPlayer.play()
         
         tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: passages.count-1, inSection: 0)], withRowAnimation: .Fade)
         tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: passages.count-1, inSection: 0), atScrollPosition: .Top, animated: true)

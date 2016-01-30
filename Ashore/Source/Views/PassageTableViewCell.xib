@@ -23,7 +23,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jV8-7N-Jad" customClass="PassageLabel" customModule="Ashore" customModuleProvider="target">
                         <rect key="frame" x="13" y="5" width="294" height="33.5"/>
                         <color key="backgroundColor" red="1" green="0.99505571142930871" blue="0.94019839638157898" alpha="1" colorSpace="calibratedRGB"/>
-                        <fontDescription key="fontDescription" name="ThrowMyHandsUpintheAir" family="Throw My Hands Up in the Air" pointSize="25"/>
+                        <fontDescription key="fontDescription" name="ThrowMyHandsUpintheAir" family="Throw My Hands Up in the Air" pointSize="23"/>
                         <color key="textColor" white="0.0" alpha="0.75092377533783783" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
