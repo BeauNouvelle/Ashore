@@ -23,5 +23,5 @@ For the most immersive experience, this interactive novel is best played with he
 
 
 ---
-
+##Important##
 All content written by Eloise Nouvelle remains her property, however feel free to use the code in your own projects.
