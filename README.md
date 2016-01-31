@@ -19,3 +19,9 @@ There will be challenges for your character, physically and emotionally.
 
 
 For the most immersive experience, this interactive novel is best played with headphones and while you are alone.
+
+
+
+---
+
+All content written by Eloise Nouvelle remains her property, however feel free to use the code in your own projects.
