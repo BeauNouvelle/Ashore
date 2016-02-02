@@ -5,8 +5,22 @@
       "scale" : "1x"
     },
     {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 41,
+          "height" : 66
+        },
+        "cap-insets" : {
+          "bottom" : 192,
+          "top" : 260,
+          "right" : 463,
+          "left" : 306
+        }
+      },
       "idiom" : "universal",
-      "filename" : "seamless_paper_texture-2.png",
+      "filename" : "Torn_02.png",
       "scale" : "2x"
     },
     {

@@ -26,8 +26,8 @@ class PassageLabel: UILabel {
         layer.shadowColor = UIColor.blackColor().CGColor
         layer.shadowOffset = CGSizeMake(0.0, 3.0)
         
-        let backgroundImage = UIImage(named: "textile")
-        backgroundColor = UIColor(patternImage: backgroundImage!)
+//        let backgroundImage = UIImage(named: "textile")
+//        backgroundColor = UIColor( UIColor(patternImage: backgroundImage!)
     }
     
     override func textRectForBounds(bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
