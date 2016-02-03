@@ -12,22 +12,10 @@ import UIKit
 
 class PassageLabel: UILabel {
     
-    @IBInspectable var edgeInsets: UIEdgeInsets = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10) {
+    @IBInspectable var edgeInsets: UIEdgeInsets = UIEdgeInsets(top: 15, left: 10, bottom: 15, right: 10) {
         didSet {
             self.invalidateIntrinsicContentSize()
         }
-    }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        layer.shadowOpacity = 0.5
-        layer.shadowRadius = 5
-        layer.shadowColor = UIColor.blackColor().CGColor
-        layer.shadowOffset = CGSizeMake(0.0, 3.0)
-        
-//        let backgroundImage = UIImage(named: "textile")
-//        backgroundColor = UIColor( UIColor(patternImage: backgroundImage!)
     }
     
     override func textRectForBounds(bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -17,11 +17,11 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textile" translatesAutoresizingMaskIntoConstraints="NO" id="W56-YZ-WAB">
-                        <rect key="frame" x="13" y="5" width="294" height="33"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jV8-7N-Jad" customClass="PassageLabel" customModule="Ashore" customModuleProvider="target">
                         <rect key="frame" x="21" y="5" width="279" height="33"/>
@@ -32,14 +32,14 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="W56-YZ-WAB" firstAttribute="leading" secondItem="jV8-7N-Jad" secondAttribute="leading" constant="-8" id="12v-8K-tyE"/>
+                    <constraint firstItem="W56-YZ-WAB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="2Kf-gS-izJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="W56-YZ-WAB" secondAttribute="trailing" constant="-8" id="7jG-sc-CO7"/>
                     <constraint firstItem="jV8-7N-Jad" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="13" id="8v5-9Z-hPe"/>
                     <constraint firstItem="jV8-7N-Jad" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="HMQ-Nb-BET"/>
+                    <constraint firstItem="W56-YZ-WAB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="LLP-g5-tWS"/>
                     <constraint firstItem="jV8-7N-Jad" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="3" id="PZ9-Ii-pDh"/>
                     <constraint firstItem="jV8-7N-Jad" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-12" id="Ufn-iX-nQ5"/>
-                    <constraint firstItem="W56-YZ-WAB" firstAttribute="top" secondItem="jV8-7N-Jad" secondAttribute="top" id="VpZ-Hd-eY3"/>
-                    <constraint firstItem="W56-YZ-WAB" firstAttribute="width" secondItem="jV8-7N-Jad" secondAttribute="width" constant="15" id="bcS-Td-xxD"/>
-                    <constraint firstItem="W56-YZ-WAB" firstAttribute="height" secondItem="jV8-7N-Jad" secondAttribute="height" id="hz3-NY-vOq"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="W56-YZ-WAB" secondAttribute="bottom" constant="-8" id="v3r-Th-DfG"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -49,6 +49,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="textile" width="405" height="255"/>
+        <image name="textile" width="813" height="435"/>
     </resources>
 </document>
