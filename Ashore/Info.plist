@@ -4,6 +4,8 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>September Mornings.ttf</string>
+		<string>angelina.TTF</string>
 		<string>ThrowMyHandsUpintheAirBold.ttf</string>
 		<string>ThrowMyHandsUpintheAir.ttf</string>
 	</array>

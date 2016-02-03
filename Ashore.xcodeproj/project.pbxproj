@@ -10,6 +10,8 @@
 		7D0E83D21C5C457A00E98C8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E83D11C5C457A00E98C8D /* Assets.xcassets */; };
 		7D0E83D41C5C459200E98C8D /* Story.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E83D31C5C459200E98C8D /* Story.plist */; };
 		7D0E83D61C5C657700E98C8D /* PassageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0E83D51C5C657600E98C8D /* PassageLabel.swift */; };
+		7D59B9FD1C617C6D00CD280E /* angelina.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 7D59B9FB1C617C6D00CD280E /* angelina.TTF */; };
+		7D59B9FE1C617C6D00CD280E /* September Mornings.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D59B9FC1C617C6D00CD280E /* September Mornings.ttf */; };
 		7D6B683E1C5B8BBA00EB311B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D6B683C1C5B8BBA00EB311B /* Main.storyboard */; };
 		7D6B68431C5B8BBA00EB311B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D6B68411C5B8BBA00EB311B /* LaunchScreen.storyboard */; };
 		7D6B68501C5B8D9800EB311B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B684B1C5B8D9800EB311B /* AppDelegate.swift */; };
@@ -31,6 +33,8 @@
 		7D0E83D11C5C457A00E98C8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D0E83D31C5C459200E98C8D /* Story.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Story.plist; sourceTree = "<group>"; };
 		7D0E83D51C5C657600E98C8D /* PassageLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassageLabel.swift; sourceTree = "<group>"; };
+		7D59B9FB1C617C6D00CD280E /* angelina.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = angelina.TTF; sourceTree = "<group>"; };
+		7D59B9FC1C617C6D00CD280E /* September Mornings.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "September Mornings.ttf"; sourceTree = "<group>"; };
 		7D6B68351C5B8BBA00EB311B /* Ashore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ashore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6B683D1C5B8BBA00EB311B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D6B68421C5B8BBA00EB311B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 		7D9AF49D1C5C7BCA00C65A9F /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				7D59B9FB1C617C6D00CD280E /* angelina.TTF */,
+				7D59B9FC1C617C6D00CD280E /* September Mornings.ttf */,
 				7D9AF4A71C5CAD3A00C65A9F /* ThrowMyHandsUpintheAirBold.ttf */,
 				7D9AF4A11C5C7CA100C65A9F /* ThrowMyHandsUpintheAir.ttf */,
 			);
@@ -224,10 +230,12 @@
 				7D0E83D41C5C459200E98C8D /* Story.plist in Resources */,
 				7D6B685F1C5C28B200EB311B /* PassageTableViewCell.xib in Resources */,
 				7D0E83D21C5C457A00E98C8D /* Assets.xcassets in Resources */,
+				7D59B9FE1C617C6D00CD280E /* September Mornings.ttf in Resources */,
 				7D6B683E1C5B8BBA00EB311B /* Main.storyboard in Resources */,
 				7D9AF4A81C5CADBE00C65A9F /* ThrowMyHandsUpintheAirBold.ttf in Resources */,
 				7D9AF4AA1C5CDF4100C65A9F /* music.caf in Resources */,
 				7D9AF4A61C5CA32500C65A9F /* paper1.wav in Resources */,
+				7D59B9FD1C617C6D00CD280E /* angelina.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
