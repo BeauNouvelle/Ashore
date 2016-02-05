@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         tableView.backgroundView = UIView()
         tableView.backgroundView?.backgroundColor = UIColor.clearColor()
         
-        storyManager.deleteSave()
+//        storyManager.deleteSave()
         
         if let savedStory = storyManager.load() {
             headphoneImageView.removeFromSuperview()
