@@ -11,7 +11,7 @@ import UIKit
 class PassageTableViewCell: UITableViewCell {
 
     
-    @IBOutlet weak var passageLabel: UILabel!
+    @IBOutlet weak var passageLabel: PassageLabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

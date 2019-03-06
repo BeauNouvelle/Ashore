@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         paperPlayer.volume = 0.50
         paperPlayer.prepareToPlay()
         
-        tableView.estimatedRowHeight = 100
+        tableView.estimatedRowHeight = 20
         tableView.rowHeight = UITableView.automaticDimension
         tableView.backgroundView = UIView()
         tableView.backgroundView?.backgroundColor = UIColor.clear
@@ -89,6 +89,13 @@ class ViewController: UIViewController {
         paperPlayer.play()
         
         let indexPath = IndexPath(row: passages.count-1, section: 0)
+        
+        let choiceRow = tableView.cellForRow(at: IndexPath(row: 0, section: 1))
+        choiceRow?.isHidden = true
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            choiceRow?.isHidden = false
+        }
         
         tableView.insertRows(at: [indexPath], with: .fade)
         tableView.scrollToRow(at: indexPath, at: .top, animated: true)

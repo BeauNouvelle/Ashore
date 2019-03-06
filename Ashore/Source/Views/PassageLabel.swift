@@ -35,6 +35,4 @@ class PassageLabel: UILabel {
         super.drawText(in: insetRect)
     }
     
-    
-
 }

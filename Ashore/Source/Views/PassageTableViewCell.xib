@@ -47,7 +47,7 @@
             </tableViewCellContentView>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
-                <outlet property="passageLabel" destination="jV8-7N-Jad" id="Hby-Hv-ekR"/>
+                <outlet property="passageLabel" destination="jV8-7N-Jad" id="yCS-XK-JQk"/>
             </connections>
             <point key="canvasLocation" x="-622" y="-40"/>
         </tableViewCell>
