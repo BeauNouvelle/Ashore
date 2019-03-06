@@ -1,15 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="ThrowMyHandsUpintheAirBold.ttf">
+        <array key="ThrowMyHandsUpintheAirBold.ttf">
             <string>ThrowMyHandsUpintheAir-Bold</string>
-            <string>ThrowMyHandsUpintheAir-Bold</string>
-        </mutableArray>
+        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -18,51 +20,55 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k81-VC-44S" customClass="ChoiceButton" customModule="Ashore" customModuleProvider="target">
-                        <rect key="frame" x="166" y="8" width="142" height="44"/>
-                        <fontDescription key="fontDescription" name="ThrowMyHandsUpintheAir-Bold" family="Throw My Hands Up in the Air" pointSize="21"/>
-                        <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
-                        <state key="normal" title="Button" backgroundImage="buttonUp">
-                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </state>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bh-NF-y2O" customClass="ChoiceButton" customModule="Ashore" customModuleProvider="target">
-                        <rect key="frame" x="12" y="7" width="142" height="45"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bh-NF-y2O" customClass="ChoiceButton" customModule="Ashore" customModuleProvider="target">
+                        <rect key="frame" x="16" y="9" width="136" height="41.5"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="44" id="DeA-nG-aCD"/>
+                            <constraint firstAttribute="height" constant="41.5" id="Xxp-pR-fWw"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="ThrowMyHandsUpintheAir-Bold" family="Throw My Hands Up in the Air" pointSize="21"/>
                         <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
                         <state key="normal" title="Button" backgroundImage="buttonUp">
-                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k81-VC-44S" customClass="ChoiceButton" customModule="Ashore" customModuleProvider="target">
+                        <rect key="frame" x="168" y="9" width="136" height="41.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41.5" id="TXZ-JS-IKf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ThrowMyHandsUpintheAir-Bold" family="Throw My Hands Up in the Air" pointSize="21"/>
+                        <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
+                        <state key="normal" title="Button" backgroundImage="buttonUp">
+                            <color key="titleColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
                     </button>
                 </subviews>
-                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
-                    <constraint firstItem="k81-VC-44S" firstAttribute="leading" secondItem="4bh-NF-y2O" secondAttribute="trailing" constant="12" id="Ixs-fy-Iun"/>
-                    <constraint firstAttribute="leadingMargin" secondItem="4bh-NF-y2O" secondAttribute="leading" constant="-4" id="KQI-5C-gim"/>
-                    <constraint firstAttribute="topMargin" secondItem="4bh-NF-y2O" secondAttribute="top" constant="1" id="NKA-7A-mP3"/>
-                    <constraint firstItem="4bh-NF-y2O" firstAttribute="width" secondItem="k81-VC-44S" secondAttribute="width" id="RX9-0S-arG"/>
-                    <constraint firstItem="k81-VC-44S" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="UPK-QB-9Bg"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="4bh-NF-y2O" secondAttribute="bottom" id="dzO-mk-AZC"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="k81-VC-44S" secondAttribute="trailing" constant="4" id="eZH-el-pPu"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="k81-VC-44S" secondAttribute="bottom" id="fFp-ik-0DB"/>
+                    <constraint firstItem="4bh-NF-y2O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="7kZ-Ha-5mu"/>
+                    <constraint firstAttribute="bottom" secondItem="4bh-NF-y2O" secondAttribute="bottom" constant="9" id="Kzi-ro-WYC"/>
+                    <constraint firstItem="k81-VC-44S" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="8" id="Ng9-lp-A7i"/>
+                    <constraint firstAttribute="centerX" secondItem="4bh-NF-y2O" secondAttribute="trailing" constant="8" id="a59-2O-xGm"/>
+                    <constraint firstAttribute="bottom" secondItem="k81-VC-44S" secondAttribute="bottom" constant="9" id="py5-di-LKR"/>
+                    <constraint firstAttribute="trailing" secondItem="k81-VC-44S" secondAttribute="trailing" constant="16" id="rzI-HS-Jnf"/>
+                    <constraint firstItem="4bh-NF-y2O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="x4m-Hv-Bv2"/>
+                    <constraint firstItem="k81-VC-44S" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="zzB-Rf-3iA"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
                 <outlet property="button1" destination="4bh-NF-y2O" id="YSA-oa-F62"/>
                 <outlet property="button2" destination="k81-VC-44S" id="f18-uW-JNm"/>
             </connections>
+            <point key="canvasLocation" x="24" y="51.27436281859071"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="buttonUp" width="590" height="145"/>
+        <image name="buttonUp" width="283.44000244140625" height="69.839996337890625"/>
     </resources>
 </document>

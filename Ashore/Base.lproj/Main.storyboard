@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,40 +18,40 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="nnj-x2-4MI">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headphones" translatesAutoresizingMaskIntoConstraints="NO" id="lab-wm-bdV">
-                                <rect key="frame" x="70" y="104" width="460" height="174"/>
+                                <rect key="frame" x="66" y="269" width="243" height="174"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="174" id="w5I-u2-AeR"/>
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ba4-mQ-I5B">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="yc7-MG-4Rx"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="vqN-SJ-F2X"/>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="nnj-x2-4MI" secondAttribute="trailing" constant="-20" id="8H3-AA-Vx1"/>
+                            <constraint firstAttribute="trailing" secondItem="nnj-x2-4MI" secondAttribute="trailing" id="3zE-QC-Qmm"/>
                             <constraint firstItem="lab-wm-bdV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="99i-ie-COC"/>
-                            <constraint firstItem="nnj-x2-4MI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="9rX-cS-nAH"/>
-                            <constraint firstItem="ba4-mQ-I5B" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Ce8-ip-bWx"/>
-                            <constraint firstItem="nnj-x2-4MI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="F4M-RY-v1m"/>
-                            <constraint firstItem="ba4-mQ-I5B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="NGg-nK-HCi"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nnj-x2-4MI" secondAttribute="bottom" id="RiL-4h-dYL"/>
+                            <constraint firstAttribute="bottom" secondItem="nnj-x2-4MI" secondAttribute="bottom" id="N8k-or-2TP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lab-wm-bdV" secondAttribute="trailing" constant="50" id="SPD-ZN-KCi"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ba4-mQ-I5B" secondAttribute="bottom" id="ehP-xN-7tD"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ba4-mQ-I5B" secondAttribute="trailing" constant="-20" id="mmT-Mj-dw2"/>
-                            <constraint firstItem="lab-wm-bdV" firstAttribute="centerY" secondItem="nnj-x2-4MI" secondAttribute="centerY" constant="-109" id="xXv-20-KMa"/>
+                            <constraint firstAttribute="bottom" secondItem="ba4-mQ-I5B" secondAttribute="bottom" id="ZfK-ix-ZYF"/>
+                            <constraint firstItem="ba4-mQ-I5B" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="b2b-s9-YAU"/>
+                            <constraint firstItem="nnj-x2-4MI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="i8r-9n-j5W"/>
+                            <constraint firstAttribute="trailing" secondItem="ba4-mQ-I5B" secondAttribute="trailing" id="lkP-GQ-Vs4"/>
+                            <constraint firstItem="lab-wm-bdV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="nAe-Pp-XZU"/>
+                            <constraint firstItem="ba4-mQ-I5B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tbV-Ja-iXx"/>
+                            <constraint firstItem="nnj-x2-4MI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zHc-gd-CXm"/>
                         </constraints>
                     </view>
                     <connections>
@@ -59,11 +62,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="364" y="354"/>
+            <point key="canvasLocation" x="364" y="353.94088669950742"/>
         </scene>
     </scenes>
     <resources>
         <image name="headphones" width="407" height="407"/>
-        <image name="splash" width="1413" height="1413"/>
+        <image name="splash" width="2826" height="2826"/>
     </resources>
 </document>

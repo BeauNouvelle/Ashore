@@ -10,11 +10,6 @@
 		7D0E83D21C5C457A00E98C8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E83D11C5C457A00E98C8D /* Assets.xcassets */; };
 		7D0E83D41C5C459200E98C8D /* Story.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E83D31C5C459200E98C8D /* Story.plist */; };
 		7D0E83D61C5C657700E98C8D /* PassageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0E83D51C5C657600E98C8D /* PassageLabel.swift */; };
-		7D53B5D71C64C06900CE8A3B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D53B5D61C64C06900CE8A3B /* SystemConfiguration.framework */; };
-		7D53B5D91C64C07900CE8A3B /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D53B5D81C64C07900CE8A3B /* libicucore.tbd */; };
-		7D53B5DB1C64C08200CE8A3B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D53B5DA1C64C08200CE8A3B /* Security.framework */; };
-		7D53B5DD1C64C08800CE8A3B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D53B5DC1C64C08800CE8A3B /* CFNetwork.framework */; };
-		7D53B5E11C64C0AC00CE8A3B /* libHeap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D53B5E01C64C0AC00CE8A3B /* libHeap.a */; };
 		7D59B9FD1C617C6D00CD280E /* angelina.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 7D59B9FB1C617C6D00CD280E /* angelina.TTF */; };
 		7D6B683E1C5B8BBA00EB311B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D6B683C1C5B8BBA00EB311B /* Main.storyboard */; };
 		7D6B68431C5B8BBA00EB311B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D6B68411C5B8BBA00EB311B /* LaunchScreen.storyboard */; };
@@ -37,13 +32,6 @@
 		7D0E83D11C5C457A00E98C8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D0E83D31C5C459200E98C8D /* Story.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Story.plist; sourceTree = "<group>"; };
 		7D0E83D51C5C657600E98C8D /* PassageLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassageLabel.swift; sourceTree = "<group>"; };
-		7D53B5CC1C64BFAD00CE8A3B /* Ashore-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Ashore-Bridging-Header.h"; path = "../Ashore-Bridging-Header.h"; sourceTree = "<group>"; };
-		7D53B5D61C64C06900CE8A3B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		7D53B5D81C64C07900CE8A3B /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
-		7D53B5DA1C64C08200CE8A3B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		7D53B5DC1C64C08800CE8A3B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		7D53B5DF1C64C0AC00CE8A3B /* Heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Heap.h; sourceTree = "<group>"; };
-		7D53B5E01C64C0AC00CE8A3B /* libHeap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHeap.a; sourceTree = "<group>"; };
 		7D59B9FB1C617C6D00CD280E /* angelina.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = angelina.TTF; sourceTree = "<group>"; };
 		7D6B68351C5B8BBA00EB311B /* Ashore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ashore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6B683D1C5B8BBA00EB311B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,11 +57,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D53B5DD1C64C08800CE8A3B /* CFNetwork.framework in Frameworks */,
-				7D53B5DB1C64C08200CE8A3B /* Security.framework in Frameworks */,
-				7D53B5D91C64C07900CE8A3B /* libicucore.tbd in Frameworks */,
-				7D53B5D71C64C06900CE8A3B /* SystemConfiguration.framework in Frameworks */,
-				7D53B5E11C64C0AC00CE8A3B /* libHeap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,34 +72,6 @@
 				7D0E83D31C5C459200E98C8D /* Story.plist */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		7D53B5C81C64BF8400CE8A3B /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-				7D53B5DE1C64C0AC00CE8A3B /* Heap */,
-			);
-			path = Vendor;
-			sourceTree = "<group>";
-		};
-		7D53B5D51C64C06100CE8A3B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7D53B5DC1C64C08800CE8A3B /* CFNetwork.framework */,
-				7D53B5DA1C64C08200CE8A3B /* Security.framework */,
-				7D53B5D61C64C06900CE8A3B /* SystemConfiguration.framework */,
-				7D53B5D81C64C07900CE8A3B /* libicucore.tbd */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7D53B5DE1C64C0AC00CE8A3B /* Heap */ = {
-			isa = PBXGroup;
-			children = (
-				7D53B5DF1C64C0AC00CE8A3B /* Heap.h */,
-				7D53B5E01C64C0AC00CE8A3B /* libHeap.a */,
-			);
-			path = Heap;
 			sourceTree = "<group>";
 		};
 		7D6B682C1C5B8BBA00EB311B = {
@@ -138,8 +93,6 @@
 		7D6B68371C5B8BBA00EB311B /* Ashore */ = {
 			isa = PBXGroup;
 			children = (
-				7D53B5D51C64C06100CE8A3B /* Frameworks */,
-				7D53B5C81C64BF8400CE8A3B /* Vendor */,
 				7D0E83D01C5C457A00E98C8D /* Resources */,
 				7D6B684A1C5B8D9800EB311B /* Source */,
 				7D6B683C1C5B8BBA00EB311B /* Main.storyboard */,
@@ -156,7 +109,6 @@
 				7D6B684E1C5B8D9800EB311B /* Model */,
 				7D6B684F1C5B8D9800EB311B /* Views */,
 				7D6B684B1C5B8D9800EB311B /* AppDelegate.swift */,
-				7D53B5CC1C64BFAD00CE8A3B /* Ashore-Bridging-Header.h */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -432,6 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = RCFBK97QU7;
 				INFOPLIST_FILE = Ashore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -442,7 +395,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nouvelle.Ashore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/beauyoung/Documents/DEV STUFF/iOS/Pear Pi/Ashore/Ashore/Ashore-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -452,6 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = RCFBK97QU7;
 				INFOPLIST_FILE = Ashore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -462,7 +417,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nouvelle.Ashore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/beauyoung/Documents/DEV STUFF/iOS/Pear Pi/Ashore/Ashore/Ashore-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

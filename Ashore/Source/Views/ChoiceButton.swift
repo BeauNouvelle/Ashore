@@ -15,19 +15,11 @@ class ChoiceButton: UIButton {
         
         layer.shadowOpacity = 0.5
         layer.shadowRadius = 5
-        layer.shadowColor = UIColor.blackColor().CGColor
-        layer.shadowOffset = CGSizeMake(0.0, 3.0)
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOffset = CGSize(width: 0.0, height: 3.0)
         
         let backgroundImage = UIImage(named: "textile")
         backgroundColor = UIColor(patternImage: backgroundImage!)
     }
-
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
-    }
-    */
 
 }

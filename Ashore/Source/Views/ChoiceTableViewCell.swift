@@ -15,9 +15,11 @@ class ChoiceTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        
     }
 
+    override func prepareForReuse() {
+        button1.setTitle("", for: .normal)
+        button2.setTitle("", for: .normal)
+    }
     
 }

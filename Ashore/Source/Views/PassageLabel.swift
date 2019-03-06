@@ -18,8 +18,9 @@ class PassageLabel: UILabel {
         }
     }
     
-    override func textRectForBounds(bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
-        var rect = super.textRectForBounds(UIEdgeInsetsInsetRect(bounds, edgeInsets), limitedToNumberOfLines: numberOfLines)
+    override func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
+        let insetRect = bounds.inset(by: edgeInsets)
+        var rect  = super.textRect(forBounds: insetRect, limitedToNumberOfLines: numberOfLines)
         
         rect.origin.x -= edgeInsets.left
         rect.origin.y -= edgeInsets.top
@@ -29,8 +30,9 @@ class PassageLabel: UILabel {
         return rect
     }
     
-    override func drawTextInRect(rect: CGRect) {
-        super.drawTextInRect(UIEdgeInsetsInsetRect(rect, edgeInsets))
+    override func drawText(in rect: CGRect) {
+        let insetRect = rect.inset(by: edgeInsets)
+        super.drawText(in: insetRect)
     }
     
     

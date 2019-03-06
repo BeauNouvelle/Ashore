@@ -8,12 +8,12 @@
 
 import Foundation
 
-class Passage: NSObject {
+struct Passage {
     
     var passage: String
     var links: [[String:String]]
 
-    override var description: String {
+    func description() -> String {
         return "\(passage) — \(links)"
     }
     
@@ -22,14 +22,32 @@ class Passage: NSObject {
         links = dictionary["links"] as! [[String:String]]
     }
     
-    func encodeWithCoder(aCoder: NSCoder!) {
-        aCoder.encodeObject(passage, forKey: "passage")
-        aCoder.encodeObject(links, forKey: "links")
+}
+
+extension Passage {
+    
+    func encode() -> Data {
+        let data = NSMutableData()
+        let archiver = NSKeyedArchiver(forWritingWith: data)
+        
+        archiver.encode(passage, forKey: "passage")
+        archiver.encode(links, forKey: "links")
+        archiver.finishEncoding()
+        
+        return data as Data
     }
     
-    init(coder aDecoder: NSCoder!) {
-        passage = aDecoder.decodeObjectForKey("passage") as! String
-        links = aDecoder.decodeObjectForKey("links") as! [[String:String]]
+    init?(data: Data) {
+        let unarchiver = NSKeyedUnarchiver(forReadingWith: data)
+        defer {
+            unarchiver.finishDecoding()
+        }
+        
+        guard let passage = unarchiver.decodeObject(forKey: "passage") as? String else { return nil }
+        guard let links = unarchiver.decodeObject(forKey: "links") as? [[String:String]] else { return nil }
+        
+        self.passage = passage
+        self.links = links
     }
-
-}
+    
+ }

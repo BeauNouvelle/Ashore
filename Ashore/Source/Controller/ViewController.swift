@@ -13,13 +13,13 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var backgroundImageView: UIImageView!
-    
     @IBOutlet weak var headphoneImageView: UIImageView!
+    
     lazy var storyManager = StoryManager()
     lazy var passages = [Passage]()
     
-    lazy var paperSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("paper1", ofType: "wav")!)
-    lazy var music = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("music", ofType: "caf")!)
+    lazy var paperSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "paper1", ofType: "wav")!)
+    lazy var music = NSURL(fileURLWithPath: Bundle.main.path(forResource: "music", ofType: "caf")!)
     lazy var musicPlayer = AVAudioPlayer()
     lazy var paperPlayer = AVAudioPlayer()
     
@@ -27,19 +27,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         registerCells()
         
-        musicPlayer = try! AVAudioPlayer(contentsOfURL: music)
+        musicPlayer = try! AVAudioPlayer(contentsOf: music as URL)
         musicPlayer.prepareToPlay()
         musicPlayer.numberOfLoops = -1
         musicPlayer.play()
         
-        paperPlayer = try! AVAudioPlayer(contentsOfURL: paperSound)
+        paperPlayer = try! AVAudioPlayer(contentsOf: paperSound as URL)
         paperPlayer.volume = 0.50
         paperPlayer.prepareToPlay()
         
         tableView.estimatedRowHeight = 100
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.backgroundView = UIView()
-        tableView.backgroundView?.backgroundColor = UIColor.clearColor()
+        tableView.backgroundView?.backgroundColor = UIColor.clear
         
 //        storyManager.deleteSave()
         
@@ -47,73 +47,72 @@ class ViewController: UIViewController {
             headphoneImageView.removeFromSuperview()
             passages = savedStory
         } else {
-            passages = [storyManager.passageWithTitle("Reflect")] // name of first passage in story
+            passages = [storyManager.passageWithTitle(title: "Reflect")] // name of first passage in story
             introHeadphoneAnimation()
         }
         tableView.reloadData()
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: passages.count-1, inSection: 0), atScrollPosition: .Top, animated: false)
+        let indexPath = IndexPath(row: passages.count-1, section: 0)
+        tableView.scrollToRow(at: indexPath, at: .top, animated: false)
     }
     
     func registerCells() {
-        tableView.registerNib(UINib(nibName: "ChoiceTableViewCell", bundle: nil), forCellReuseIdentifier: "ChoiceCell")
-        tableView.registerNib(UINib(nibName: "PassageTableViewCell", bundle: nil), forCellReuseIdentifier: "PassageCell")
+        tableView.register(UINib(nibName: "ChoiceTableViewCell", bundle: nil), forCellReuseIdentifier: "ChoiceCell")
+        tableView.register(UINib(nibName: "PassageTableViewCell", bundle: nil), forCellReuseIdentifier: "PassageCell")
     }
     
     func introHeadphoneAnimation() {
-        tableView.hidden = true
+        tableView.isHidden = true
         tableView.alpha = 0.0
-        headphoneImageView.hidden = false
+        headphoneImageView.isHidden = false
         
-        let delayInSeconds = 4
-        
-        let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delayInSeconds) * Int64(NSEC_PER_SEC))
-        dispatch_after(popTime, dispatch_get_main_queue(), { () -> Void in
-            UIView.animateWithDuration(1.0, animations: { () -> Void in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+            UIView.animate(withDuration: 1.0, animations: { () -> Void in
                 self.headphoneImageView.alpha = 0.0
-                self.tableView.hidden = false
+                self.tableView.isHidden = false
                 self.tableView.alpha = 1.0
-                }, completion: { (bool) -> Void in
-                    self.headphoneImageView.removeFromSuperview()
+            }, completion: { (bool) -> Void in
+                self.headphoneImageView.removeFromSuperview()
             })
-        })
+        }
+
     }
     
-    func tappedChoice(sender: ChoiceButton) {
-        
+    @objc func tappedChoice(sender: ChoiceButton) {
         let passageTitle = passages.last?.links[sender.tag]["passageTitle"]
-        passages.append(storyManager.passageWithTitle(passageTitle!))
-        storyManager.save(passages)
+        passages.append(storyManager.passageWithTitle(title: passageTitle!))
+        storyManager.save(passages: passages)
         
         paperPlayer.play()
         
-        tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: passages.count-1, inSection: 0)], withRowAnimation: .Fade)
-        tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: passages.count-1, inSection: 0), atScrollPosition: .Top, animated: true)
+        let indexPath = IndexPath(row: passages.count-1, section: 0)
+        
+        tableView.insertRows(at: [indexPath], with: .fade)
+        tableView.scrollToRow(at: indexPath, at: .top, animated: true)
     }
     
 }
 
 extension ViewController: UITableViewDataSource {
- 
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 2 // passage and choice
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return passages.count
         }
         return 1
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         if indexPath.section == 0 {
-            let cell = tableView.dequeueReusableCellWithIdentifier("PassageCell") as! PassageTableViewCell
-            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PassageCell") as! PassageTableViewCell
             let passage = passages[indexPath.row]
         
             cell.passageLabel?.text = passage.passage
@@ -121,22 +120,20 @@ extension ViewController: UITableViewDataSource {
             return cell
         }
 
-        let cell = tableView.dequeueReusableCellWithIdentifier("ChoiceCell") as! ChoiceTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ChoiceCell") as! ChoiceTableViewCell
 
         let lastPassage = passages.last
         
-        if lastPassage?.links.count > 1 {
-            cell.button2.setTitle(lastPassage?.links[1]["displayText"], forState: .Normal)
-            cell.button2.hidden = false
-            cell.button2.addTarget(self, action: "tappedChoice:", forControlEvents: .TouchUpInside)
-            // set target here
+        if let count = lastPassage?.links.count, count > 1 {
+            cell.button2.setTitle(lastPassage?.links[1]["displayText"], for: .normal)
+            cell.button2.isHidden = false
+            cell.button2.addTarget(self, action: #selector(tappedChoice(sender:)), for: .touchUpInside)
         } else {
-            cell.button2.hidden = true
-            // set target here
+            cell.button2.isHidden = true
         }
         
-        cell.button1.setTitle(lastPassage?.links.first!["displayText"], forState: .Normal)
-        cell.button1.addTarget(self, action: "tappedChoice:", forControlEvents: .TouchUpInside)
+        cell.button1.setTitle(lastPassage?.links.first!["displayText"], for: .normal)
+        cell.button1.addTarget(self, action: #selector(tappedChoice(sender:)), for: .touchUpInside)
 
         return cell
     }

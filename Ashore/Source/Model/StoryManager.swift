@@ -12,7 +12,7 @@ import UIKit
 class StoryManager {
     
     lazy var story: [String:AnyObject] = {
-        let path = NSBundle.mainBundle().pathForResource("Story", ofType: "plist")
+        let path = Bundle.main.path(forResource: "Story", ofType: "plist")
         let dict = NSDictionary(contentsOfFile: path!) as! [String:AnyObject]
         return dict
     }()
@@ -23,21 +23,20 @@ class StoryManager {
     }
     
     func load() -> [Passage]? {
-        if let data = NSUserDefaults.standardUserDefaults().objectForKey("passages") as? NSData {
-            let passages = NSKeyedUnarchiver.unarchiveObjectWithData(data) as! [Passage]
+        if let data = UserDefaults.standard.object(forKey: "passages") as? [Data] {
+            let passages = data.compactMap { Passage(data: $0) }
             return passages
         }
         return nil
     }
     
     func save(passages: [Passage]) {
-        let data = NSKeyedArchiver.archivedDataWithRootObject(passages)
-        NSUserDefaults.standardUserDefaults().setObject(data, forKey: "passages")
-        NSUserDefaults.standardUserDefaults().synchronize()
+        let encodedPassages = passages.map { $0.encode() }
+        UserDefaults.standard.set(encodedPassages, forKey: "passages")
     }
     
     func deleteSave() {
-        NSUserDefaults.standardUserDefaults().removeObjectForKey("passages")
+        UserDefaults.standard.removeObject(forKey: "passages")
     }
     
 }
